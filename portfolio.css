@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap');
+:root {
+	--violet: #45d0e4;
+}
+body{
+    padding: 0 2%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: ivory;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: ivory;
+    position: sticky;
+    top: 0;
+}
+nav .profile{
+    display: flex;
+    align-items: center;
+}
+
+nav .profile img{
+    width: 150px;
+    height: 150px;
+    border-radius: 25%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+.menu li {
+    list-style: none;
+    margin: 0 15px;
+}
+.menu li a {
+    color: var(--violet);
+    text-decoration: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: 0.5s;
+    color: #004e5a;
+}
+.menu li a:hover {
+    color: #0011ff;
+}
+
+.menu .buy_li a   {
+    padding: 5px 15px;
+	font-size: 16px;
+	background-color: #20212e;
+	border: 1px solid var(--violet);
+	border-radius: 25px;
+	color: var(--violet);
+	cursor: pointer;
+	transition: color 0.5s, background-color 0.5s;
+}
+.menu .buy_li:hover a {
+    color: #004e5a;
+    background-color: wheat;
+    
+}
+
+.page-content{
+    margin: 4%;
+}
+
+.page-content header{
+    margin-top: 5px;
+    max-width: 80%;
+}
+
+.page-content header h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Merriweather', serif;
+    font-size: 6vw;
+}
+
+.page-content header .new{
+    color: red;
+    font-size: 15px;
+}
+
+.page-content header p{
+    line-height: 30px;
+    color: #20212e;
+}
+
+.page-content header button{
+    border: 1px solid #45d0e4;
+    padding: 15px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.page-content header button:hover{
+    color: #45d0e4;
+    background-color:#20212e;
+}
+
+.page-content .presentation-image{
+    margin-top: 5px;
+    cursor: pointer;
+}
+.page-content .presentation-image img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+
+footer {
+	margin: 0;
+	padding: 20px;
+	background-color: black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+footer h3 {
+	color: var(--violet);
+    cursor: pointer;
+}
+footer p {
+	cursor: pointer;
+	color: #ccc;
+}
+footer p:hover {
+	color: white;
+}
+
+@media screen and (max-width: 700px){
+    nav{
+        justify-content: center;
+    }
+
+    nav .menu{
+        display: none;
+    }
+
+    .page-content header{
+        margin-top: 10%;
+        max-width: 100%;
+    }
+
+    footer {
+		justify-content: flex-start;
+	}
+	footer .column {
+		width: 80%;
+	}
+}
